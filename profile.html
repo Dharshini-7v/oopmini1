@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Report System - Profile</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <span>Welcome, <strong id="username">User</strong></span>
+        <nav class="menu-bar">
+            <a href="dashboard.html">📊 Dashboard</a>
+            <a href="reportEntry.html">📝 Report Entry</a>
+            <a href="profile.html" class="active">👤 Profile</a>
+            <a href="#" onclick="logout()">🚪 Logout</a>
+        </nav>
+    </header>
+    <main>
+        <div class="card">
+            <h2>User Profile</h2>
+            <div class="profile-section">
+                <div class="profile-info">
+                    <div class="profile-item">
+                        <label>Username</label>
+                        <div class="profile-value" id="profileUsername">-</div>
+                    </div>
+                    <div class="profile-item">
+                        <label>Account Type</label>
+                        <div class="profile-value">Standard User</div>
+                    </div>
+                    <div class="profile-item">
+                        <label>Total Reports Processed</label>
+                        <div class="profile-value" id="totalReports">-</div>
+                    </div>
+                    <div class="profile-item">
+                        <label>Total Students</label>
+                        <div class="profile-value" id="totalStudents">-</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/script-standalone.js"></script>
+</body>
+</html>
+
